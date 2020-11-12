@@ -1,0 +1,27 @@
+form{
+    padding: 20px 20px;
+    background-color: aliceblue;
+}
+
+.formContent{
+    padding: 10px 10px;
+}
+
+form label{
+    display: block;
+    padding-left: 0 !important;
+}
+
+form input{
+    display: block;
+    width: 100%;
+    background-color: #e8f0fe;
+    height: 2em;
+    border: none;
+}
+
+.formBtn{
+    margin:10px 10px;
+    margin-right: 0;
+    float: right;
+}

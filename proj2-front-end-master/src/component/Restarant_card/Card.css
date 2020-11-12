@@ -1,0 +1,9 @@
+.myCard{
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: aliceblue;
+}
+
+.Dialog-card{
+    position: absolute;
+}

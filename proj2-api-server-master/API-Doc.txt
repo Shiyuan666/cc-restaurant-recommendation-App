@@ -1,0 +1,112 @@
+Yelp Fusion API Doc
+
+status 0 means success, 1 means failure
+========================================================================================
+ip：/yelp-fusion/requestRecommend.do  (Method = POST)
+
+request:
+
+String term, String location, double latitude, double longitude, String price
+
+i.e.
+		String term = "Chinese";                       // term
+		String location = "New York, NY";            // location
+		String latitude = "40.70544486444615";
+		String longitude = "-73.99429321289062";
+		String price = "1";                 //  1 = $, 2 = $$, 3 = $$$, 4 = $$$$
+
+
+
+
+response (.json）， data(.json):
+
+fail:
+
+    {
+        "status": 1,
+        "msg": "No result"
+    }
+
+success:
+
+    {
+        "status": 0,
+        "data": {
+        ...
+        }
+    }
+
+
+
+ip：/yelp-fusion/requestRecommendByID.do (Method = POST)
+
+Request:
+  String restaurantID
+
+
+output:
+response (.json）， data(.json):
+
+fail:
+
+    {
+        "status": 1,
+        "msg": "No result"
+    }
+
+success:
+
+    {
+        "status": 0,
+        "data": {
+            ...
+        }
+    }
+
+
+========================================================================================
+
+ip：/p2p/getID.do  (Method = GET)
+
+Success:
+    {
+        "status": 0,
+        "msg": "Successfully Found Other Online People",
+        "data": "666666 555555 444444"
+    }
+
+
+
+ip：/p2p/saveID.do  (Method = POST)
+request: String inputID
+
+success:
+    {
+        "status": 0,
+        "msg": "Successfully saved ID: 333333"
+    }
+
+
+
+ip：/p2p/deleteByID.do?inputID=val  (Method = DELETE)
+request: String inputID, should put the inputID=val after /p2p/deleteByID.do?
+
+success:
+    {
+        "status": 0,
+        "data": "Successfully Deleted ID: 666666"
+    }
+
+
+
+ip：/p2p/deleteAllID.do  (Method = DELETE)
+
+success:
+
+    {
+        "status": 0,
+        "data": "File deleted successfully"
+    }
+
+
+

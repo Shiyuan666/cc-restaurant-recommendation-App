@@ -1,0 +1,8 @@
+{
+    "appService.zipIgnorePattern": [
+        "node_modules{,/**}",
+        ".vscode{,/**}"
+    ],
+    "appService.deploySubpath": "",
+    "appService.defaultWebAppToDeploy": "/subscriptions/d1cf66eb-fe7d-4f80-bff3-3865288f31ab/resourceGroups/myResourceGroup/providers/Microsoft.Web/sites/WYWE"
+}

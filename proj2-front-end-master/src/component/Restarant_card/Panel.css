@@ -1,0 +1,36 @@
+.mask{
+    position: absolute;
+    top: 0px;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    /* filter: blur(30px); */
+}
+
+.mask-layer{
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1;
+    backdrop-filter: blur(30px);
+}
+
+.mask-banner{
+    z-index: 2;
+    color:white;
+    text-shadow: 2px 2px 5px rgb(145, 162, 153);
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap 
+    /* flex-direction: column; */
+}
+
+.mask-button{
+    flex: 0 0 100px;
+}
